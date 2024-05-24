@@ -32,8 +32,18 @@ const agregarusuarios= async(req, res)=>{
         mensajes.error(req, res, 500, error);
     }
 };
-const modificarusuarios=()=>{
-
+const modificarusuarios=async(req, res)=>{
+    const {id,nombre}= req.body;
+    try {
+        const respuesta = await pool.query(`CALL sp_modificar_usuario(?,?);`,[id,nombre]);
+        if (respuesta[0].affectedRows==1) {
+            mensajes.success(req, res, 200, "usuario modificad0");
+        }else{
+            mensajes.error(req, res,400, "usuarios no modificado");
+        }
+    } catch (error) {
+        mensajes.error(req, res,500, error);
+    }
 };
 const eliminarusuarios=async(req, res)=>{
     const {id}= req.body;
