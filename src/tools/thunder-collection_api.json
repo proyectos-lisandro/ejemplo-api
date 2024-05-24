@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "api",
+    "collectionId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+    "dateExported": "2024-05-24T23:31:46.157Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1bdc91fc-3f6f-4b52-a106-2295dbd6cb82",
+            "colId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+            "containerId": "",
+            "name": "agregarusuario",
+            "url": "http://localhost:3000/api/usuario",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-24T22:24:47.539Z",
+            "modified": "2024-05-24T23:15:25.249Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"fs\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6449861e-2e84-4d55-bcdb-49ca6eb7f871",
+            "colId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+            "containerId": "",
+            "name": "listarusuarios",
+            "url": "http://localhost:3000/api/usuario",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-24T22:47:35.191Z",
+            "modified": "2024-05-24T22:47:42.504Z",
+            "headers": []
+        },
+        {
+            "_id": "18aa808a-bc32-4a3c-8e4b-989fedb7d7fb",
+            "colId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+            "containerId": "",
+            "name": "mostrarusuarios",
+            "url": "http://localhost:3000/api/usuario/8",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-24T22:57:56.480Z",
+            "modified": "2024-05-24T23:03:23.600Z",
+            "headers": []
+        },
+        {
+            "_id": "1b2bfc0e-2bd1-47b5-8c9b-07428a7fccf6",
+            "colId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+            "containerId": "",
+            "name": "eliminarusuarios",
+            "url": "http://localhost:3000/api/usuario",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-24T23:02:35.310Z",
+            "modified": "2024-05-24T23:03:17.923Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":8\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cd8cf2ce-e24c-452f-9e2b-e439196f3f3b",
+            "colId": "c6b0354b-bbad-435d-adfa-9a40f0a3f2aa",
+            "containerId": "",
+            "name": "modificarusuario",
+            "url": "http://localhost:3000/api/usuario",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-05-24T23:20:27.939Z",
+            "modified": "2024-05-24T23:21:21.782Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":9,\n  \"nombre\":\"fisica\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Ns6bVUQJe8QE4qG94bwyYGPeS1T-jioPLqSySNMOz2wndzwojwtwCkJNA8DKebcXQMtyr3d8tW1EEmLmGS75bA"
+}
